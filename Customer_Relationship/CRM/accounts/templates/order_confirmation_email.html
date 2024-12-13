@@ -1,0 +1,22 @@
+<!-- templates/order_confirmation_email.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Confirmation</title>
+</head>
+<body>
+    <p>Dear {{ customer.name }},</p>
+    <p>Thank you for your order!</p>
+    <p>Your order details:</p>
+    <ul>
+        <li>Order ID: {{ order.id }}</li>
+        <li>Order Date: {{ order.order_date }}</li>
+        <li>Delivery Date: {{ order.delivery_date }}</li>
+        <li>Total Amount: {{ order.total_amount }}</li>
+        <li>Status: {{ order.status }}</li>
+    </ul>
+    <p>We will notify you once your order is delivered.</p>
+    <p>Best regards,</p>
+    <p>Your Company</p>
+</body>
+</html>

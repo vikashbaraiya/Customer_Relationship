@@ -1,0 +1,20 @@
+<!-- templates/delivery_confirmation_email.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Delivered</title>
+</head>
+<body>
+    <p>Dear {{ customer.name }},</p>
+    <p>Your order has been delivered!</p>
+    <p>Order Details:</p>
+    <ul>
+        <li>Order ID: {{ order.id }}</li>
+        <li>Delivery Date: {{ order.delivery_date }}</li>
+        <li>Status: Delivered</li>
+    </ul>
+    <p>Thank you for shopping with us!</p>
+    <p>Best regards,</p>
+    <p>Your Company</p>
+</body>
+</html>
